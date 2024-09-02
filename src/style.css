@@ -1,0 +1,84 @@
+:root {
+  font-size: 12px; /* Default font size */
+}
+
+.container::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  font-size: 1rem; /* 16px */
+}
+
+.text-small {
+  font-size: 0.875rem; /* 14px */
+}
+
+.text-medium {
+  font-size: 1rem; /* 16px */
+}
+
+.text-large {
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Tambahkan ini di dalam file CSS yang digunakan atau buat file CSS baru */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #767676;
+  transition: all 0.3s ease; /* Animasi ketika muncul atau hilang */
+}
+
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna dan opasitas blur */
+  backdrop-filter: blur(8px); /* Jumlah blur yang diinginkan */
+  z-index: 1;
+}
+
+/* styles.css atau App.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* Membuat latar belakang blur */
+  z-index: 1000; /* Agar berada di atas konten lainnya */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-class {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 1100; /* Di atas overlay */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
